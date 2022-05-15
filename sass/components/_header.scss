@@ -13,6 +13,10 @@
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+
+    @media (max-width: 767px) {
+                display: none;
+            }
 }
 
 .nav-list__item {
@@ -31,6 +35,10 @@
     margin-left: auto;
     list-style-type: none;
     padding: 0px;
+
+    @media screen and (max-width: 760px)  {
+        display: none;
+    }
 }
 
 .contact-button {

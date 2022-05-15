@@ -37,7 +37,24 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 section {
@@ -101,6 +118,12 @@ footer {
   padding: 0px;
 }
 
+@media (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 .nav-list__item {
   margin-right: 50px;
 }
@@ -120,6 +143,12 @@ footer {
   margin-left: auto;
   list-style-type: none;
   padding: 0px;
+}
+
+@media screen and (max-width: 760px) {
+  .contact-list {
+    display: none;
+  }
 }
 
 .contact-button {
@@ -1199,5 +1228,73 @@ footer {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 40px;
+  padding-right: 25px;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: var(--just-white-color);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--transition-const);
+  transition: -webkit-transform var(--transition-const);
+  transition: transform var(--transition-const);
+  transition: transform var(--transition-const), -webkit-transform var(--transition-const);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-menu {
+  width: 480px;
+  height: 796px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-toggle-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  right: 15px;
+  top: 10px;
+}
+
+.menu-toggle-open:hover, .menu-toggle-open:focus {
+  fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 760px) {
+  .menu-toggle-open {
+    display: none;
+  }
+}
+
+.menu-toggle-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-toggle-open:hover, .menu-toggle-open:focus {
+  fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 760px) {
+  .menu-toggle-open {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
