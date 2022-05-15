@@ -1,0 +1,39 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
+
+section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.section-fix {
+    padding-bottom: 0px;
+}
+
+header {
+    background-color: var(--just-white-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--bg-color);
+}
