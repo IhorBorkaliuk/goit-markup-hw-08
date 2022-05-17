@@ -21,6 +21,11 @@
 section {
     padding-bottom: 94px;
     padding-top: 94px;
+
+@media (max-width: 768px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
 }
 
 .section-fix {
@@ -41,6 +46,21 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+}
+
+.title-services {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 footer {

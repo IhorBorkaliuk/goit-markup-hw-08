@@ -3,6 +3,10 @@
     margin-top: 50px;
     list-style-type: none;
     padding: 0px;
+
+@media (max-width: 768px) {
+    display: none;
+}
 }
 
 .services-list__item {
