@@ -1,4 +1,6 @@
 .menu-container {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -121,11 +123,15 @@
 }
 
 .mobile-soc__item {
-    margin-right: 10px;
+    margin-right: 5px;
 
     &:last-child {
         margin-right: 0px;
     }
+
+@media (min-width: 480px) {
+    margin-right: 10px;
+}
 }
 
 .mobile-soc__link {

@@ -35,6 +35,11 @@
     margin-top: 50px;
     list-style-type: none;
     padding: 0px;
+
+@media (max-width: 767px) {
+    display: block;
+    margin-top: 30px;
+}
 }
 
 .team-list__item {
@@ -43,4 +48,17 @@
 &:last-child {
         margin-right: 0px;
     }
+
+@media (max-width: 767px) {
+    margin: 0;
+    margin-top: 30px;
+
+&:first-child {
+    margin-top: 0px;
+}
+}
+}
+
+.team-list__item img {
+    width: 100%;
 }
