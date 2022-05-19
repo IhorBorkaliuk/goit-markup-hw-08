@@ -340,7 +340,6 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
@@ -350,11 +349,53 @@ header {
   background-size: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .background-about {
     max-width: 480px;
-    height: 400px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/mobile-hero-480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile-hero-480.jpg);
+    background-size: cover;
     padding: 118px 60px;
+  }
+}
+
+@media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
+  .background-about {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/mobile-hero-960.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile-hero-960.jpg);
+  }
+}
+
+@media (min-width: 481px) {
+  .background-about {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/tablet-hero-768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet-hero-768.jpg);
+    background-size: cover;
+    padding: 118px 0;
+  }
+}
+
+@media (min-width: 481px) and (min-device-pixel-ratio: 2), (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 192dpi), (min-width: 481px) and (min-resolution: 2dppx) {
+  .background-about {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/tablet-hero-1536.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet-hero-1536.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .background-about {
+    max-width: 1600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/desktop-hero-1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop-hero-1600.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .background-about {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/desktop-hero-3200.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop-hero-3200.jpg);
   }
 }
 
