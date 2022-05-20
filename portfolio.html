@@ -22,6 +22,15 @@
   <body>
     <header>
       <div class="header-box container">
+        <button
+          class="menu-toggle-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/icons-2.svg#menu"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
           <a href="./index.html" class="logo logo--top">
             <span class="logo-color">Web</span>Studio</a
@@ -57,6 +66,47 @@
       </div>
     </header>
     <main>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle-close js-close-menu">
+          <svg width="40px" height="40px">
+            <use href="./images/icons-2.svg#close_menu"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студия</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item"><a href="./" class="mobile-menu__link">Контакты</a></li>
+        </ul>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a href="tel:+380961111111" class="mobile-contact__phone"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contact__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contact__email">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-soc">
+          <li class="mobile-soc__item">
+            <a href="" class="mobile-soc__link"> Instagram <span class="mark"></span> </a>
+          </li>
+          <li class="mobile-soc__item">
+            <a href="" class="mobile-soc__link"> Twitter <span class="mark"></span> </a>
+          </li>
+          <li class="mobile-soc__item">
+            <a href="" class="mobile-soc__link"> Facebook <span class="mark"></span> </a>
+          </li>
+          <li class="mobile-soc__item">
+            <a href="" class="mobile-soc__link"> LinkedIn </a>
+          </li>
+        </ul>
+      </div>
+
       <section>
         <div class="container">
           <ul class="buttons">
