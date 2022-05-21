@@ -9,6 +9,11 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 }
 
 .partners__link {
@@ -31,6 +36,13 @@
     @media (max-width: 767px) {
         width: auto;
     }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+    &:nth-last-child(-n+3) {
+        margin-top: 30px;
+    }
+}
 }
 
 .partners__icon {
@@ -60,5 +72,12 @@
         margin-left: 30px;
         margin-bottom: 30px;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+    margin: 0;
+        &+& {
+                margin-left: 0px;
+            }
 }
 }

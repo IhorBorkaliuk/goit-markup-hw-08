@@ -1,4 +1,5 @@
 .card {
+    flex-grow: 1;
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
@@ -20,16 +21,29 @@
     margin-bottom: 0;
     margin-top: 40px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
 }
 
 .portfolio__link {
     position: relative;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow var(--transition-const);
     
     &:hover {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        height:100%;
+}
 }
 
 
@@ -51,6 +65,14 @@
     &:nth-child(-n + 3) {
             margin-top: 30px;
         }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    width: 354px;
+    &:nth-last-child(-n+7) {
+        margin-top: 30px;
+    }
 }
 }
 

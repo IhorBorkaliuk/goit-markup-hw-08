@@ -12,7 +12,7 @@
     text-transform: uppercase;
     color: #ffffff;
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
         max-width: 360px;
         font-size: 26px;
         line-height: 1.62;
@@ -42,17 +42,13 @@
 }
 
 .background-about {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     max-width: 480px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-480.jpg);
     background-size: cover;
@@ -66,10 +62,11 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+    max-height: 400px;
     max-width: 768px;
+    padding: 118px 204px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero-768.jpg);
-    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -79,7 +76,10 @@
 }
 
 @media (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
+    max-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-hero-1600.jpg);
     background-size: cover;
 

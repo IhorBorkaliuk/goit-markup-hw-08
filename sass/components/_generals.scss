@@ -22,7 +22,7 @@ section {
     padding-bottom: 94px;
     padding-top: 94px;
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     padding-bottom: 60px;
     padding-top: 60px;
 }
@@ -58,7 +58,7 @@ header {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 
-    @media (max-width: 768px) {
+    @media (max-width: 1199px) {
         display: none;
     }
 }

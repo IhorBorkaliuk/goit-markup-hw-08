@@ -4,9 +4,14 @@ footer {
     padding-bottom: 60px;
     background-color: var(--bg-color);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         display: block;
     }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+    padding-right: 89px;
+}
 }
 
 .address__text {
@@ -100,6 +105,10 @@ footer {
     display: flex;
     align-items: center;
     margin-top: 20px;
+
+    @media (max-width: 768px) {
+            width: 100%;
+        }
 }
 
 .form__email {
@@ -116,6 +125,9 @@ footer {
     @media (max-width: 768px) {
         width: 100%;
         }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+}
 }
 
 .form__button {
@@ -146,6 +158,13 @@ footer {
                 display: flex;
                 flex-direction: column;
             }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    display: block;
+    margin-top: 20px;
+    width: 450px;
+}
 }
 
 .form__button-send {
@@ -176,6 +195,12 @@ footer {
             margin: 0;
             margin-top: 30px;
         }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 }
 
 .form__icon-send {
@@ -190,27 +215,54 @@ footer {
     display: flex;
     align-items: baseline;
 
-    @media (max-width: 768px) {
-            display: block;
-            text-align: center;
-        }
+@media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
 }
+}
+
 
 .invite-block {
     margin-left: 70px;
         @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    text-align: center;
     margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
             }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
 }
-
+}
 .connect-block {
     margin-left: 93px;
         @media (max-width: 768px) {
     margin: 0;
     margin-top: 60px;
+    width: 100%;
     text-align: center;
             }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+}
+
+.logo-address {
+@media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 }
