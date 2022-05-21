@@ -1,13 +1,30 @@
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+
+@media (max-width:767px) {
+    justify-content: flex-start;
+}
 }
 
 .buttons__item {
     margin-right: 8px;
+
+@media (max-width: 767px) {
+        &:nth-last-child(-n+2) {
+                margin-top: 21px;
+            }
+}
+
+@media (max-width: 399px) {
+            &:nth-last-child(-n+3) {
+                    margin-top: 21px;
+                }
+}
 }
 
 .buttons__item:last-child {

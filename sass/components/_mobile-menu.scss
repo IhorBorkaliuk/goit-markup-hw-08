@@ -11,9 +11,9 @@
     padding-bottom: 48px;
     width: 100vw;
     height: 100vh;
+    z-index: 500;
     background-color: var(--just-white-color);
     transform: translateX(100%);
-    z-index: 999;
     &.is-open {
         transform: translateX(0);
     }
@@ -87,7 +87,7 @@
 .mobile-contact {
     list-style: none;
     padding: 0;
-    margin-top: 200px;
+    margin-top: 40%;
     margin-bottom: 0;
 }
 
@@ -128,15 +128,11 @@
     &:last-child {
         margin-right: 0px;
     }
-
-@media (min-width: 480px) {
-    margin-right: 10px;
-}
 }
 
 .mobile-soc__link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 4vmin;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
