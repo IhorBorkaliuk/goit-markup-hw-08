@@ -106,7 +106,7 @@ footer {
     align-items: center;
     margin-top: 20px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
             width: 100%;
         }
 }
@@ -122,7 +122,7 @@ footer {
     padding: 15px;
     outline: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         width: 100%;
         }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -154,7 +154,7 @@ footer {
     align-items: center;
     margin-top: 20px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
                 display: flex;
                 flex-direction: column;
             }
@@ -191,7 +191,7 @@ footer {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             margin: 0;
             margin-top: 30px;
         }
@@ -215,7 +215,7 @@ footer {
     display: flex;
     align-items: baseline;
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -232,7 +232,7 @@ footer {
 
 .invite-block {
     margin-left: 70px;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
     text-align: center;
     margin-top: 60px;
     margin-left: auto;
@@ -244,11 +244,11 @@ footer {
 }
 .connect-block {
     margin-left: 93px;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
     margin: 0;
     margin-top: 60px;
-    width: 100%;
     text-align: center;
+    width: 100%;
             }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0;
@@ -260,7 +260,7 @@ footer {
 }
 
 .logo-address {
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
     text-align: center;

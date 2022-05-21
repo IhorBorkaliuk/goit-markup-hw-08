@@ -1038,7 +1038,7 @@ footer {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form {
     width: 100%;
   }
@@ -1056,7 +1056,7 @@ footer {
   outline: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form__email {
     width: 100%;
   }
@@ -1100,7 +1100,7 @@ footer {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1149,7 +1149,7 @@ footer {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form__button-send {
     margin: 0;
     margin-top: 30px;
@@ -1181,7 +1181,7 @@ footer {
           align-items: baseline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .position {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1214,7 +1214,7 @@ footer {
   margin-left: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .invite-block {
     text-align: center;
     margin-top: 60px;
@@ -1233,12 +1233,12 @@ footer {
   margin-left: 93px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .connect-block {
     margin: 0;
     margin-top: 60px;
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -1252,7 +1252,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .logo-address {
     margin-left: auto;
     margin-right: auto;
@@ -1865,7 +1865,7 @@ footer {
   fill: var(--accent-text-color);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-toggle-open {
     display: none;
   }
